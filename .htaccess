@@ -1,0 +1,6 @@
+# mod_rewrite
+# directive
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	RewriteRule ^image/([^/]+)/?$ image.php?image=$1 [L]  
+</IfModule>
